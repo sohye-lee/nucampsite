@@ -39,6 +39,7 @@
         </div>
     </header>
 
+    <!-----------------  Start Reservation Form Modal  ------------------>
     <div id="reserveModal" class="modal fade bd-example-modal-lg" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -86,7 +87,7 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-6">
-                                    <button type="cancel" class="btn btn-secondary">Cancel</button>
+                                    <button type="button" class="btn btn-secondary">Cancel</button>
                                     <button type="submit" class="btn btn-primary">Search</button>
                                 </div>
                             </div>
@@ -96,7 +97,9 @@
             </div>
         </div>
     </div>
+    <!-----------------  End Reservation Form Modal  ------------------>
 
+    <!-----------------  Start Nav Bar  ------------------>
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
             <a href="#" class="navbar-brand"><img src="img/logo.png" height="30" width="30"></a>
@@ -118,7 +121,9 @@
             </div>
         </div>
     </nav>
+    <!-----------------  End Nav Bar  ------------------>
 
+    <!-----------------  Start Login Modal  ------------------>
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -155,7 +160,9 @@
             </div>
         </div>
     </div>
+    <!-----------------  End Login Modal  ------------------>
 
+    <!-----------------  Start Contents  ------------------>
     <div class="container">
         <div class="row row-content">
             <div class="col-md-8 mx-auto">
@@ -246,8 +253,8 @@
                 </div>
             </div>
         </div>
-
     </div>
+    <!-----------------  End Contents  ------------------>
 
 
 
@@ -286,23 +293,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script>
-        $(function() {
-            $(".carousel").carousel( {interval: 2000});
-            $("#carouselButton").click(function() {
-                if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-                    $(".carousel").carousel("pause");
-                    $("#carouselButton").children("i").removeClass("fa-pause");
-                    $("#carouselButton").children("i").addClass("fa-play");
-                } else {
-                    $(".carousel").carousel("cycle");
-                    $("#carouselButton").children("i").removeClass("fa-play");
-                    $("#carouselButton").children("i").addClass("fa-pause");
-                }
-            });
-            
-        });
-    </script>
+    <script src="js/scripts.js"></script>
 
 </body>
 
